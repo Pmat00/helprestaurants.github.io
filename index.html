@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menù Digitale - Cliente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Menù Digitale</h1>
+        <p>Benvenuto! Seleziona i tuoi piatti preferiti.</p>
+    </header>
+    <main id="menu"></main>
+    <footer>
+        <button onclick="viewCart()">Vai al Carrello</button>
+    </footer>
+
+    <div id="cart" style="display:none;">
+        <h2>Il tuo Ordine</h2>
+        <ul id="cart-items"></ul>
+        <button onclick="submitOrder()">Invia Ordine</button>
+        <button onclick="goBack()">Torna al Menù</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
